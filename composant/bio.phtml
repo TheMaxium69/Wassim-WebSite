@@ -1,0 +1,130 @@
+<div class="arow gap margetop bio-desktop">
+        <div id="pic" class="column">
+            <p class="circle"></p>
+        </div>
+        <div id="about" class="column">
+            <div id="title" class="centered margebottom">
+                <h2>Mais c'est qui Wassim ?</h2>
+            </div>
+            <div id="bio" class="centered smargebottom">
+                <p>
+                Un monteur de folie mauvais a smash jécris pour remplir voir le rendu je pense pas ce que j ecris pomme pas egal kiwi
+                <br>Un monteur de folie mauvais a smash jécris pour remplir voir le rendu je pense pas ce que j ecris pomme pas egal kiwi
+                <br>Un monteur de folie mauvais a smash jécris pour remplir voir le rendu je pense pas ce que j ecris pomme pas egal kiwi
+                <br>Un monteur de folie mauvais a smash jécris pour remplir voir le rendu je pense pas ce que j ecris pomme pas egal kiwi
+                <br>Un monteur de folie mauvais a smash jécris pour remplir voir le rendu je pense pas ce que j ecris pomme pas egal kiwi
+                <br>Un monteur de folie mauvais a smash jécris pour remplir voir le rendu je pense pas ce que j ecris pomme pas egal kiwi
+                </p>
+            </div>
+            <div id="embed-confiance" class="ssmargebottom">
+                <h4>Ceux qui m'ont fait confiance :</h4>
+            </div>
+            <div id="clients" class="arow">
+                <p class="square"></p>
+                <p class="square"></p>
+                <p class="square"></p>
+                <p class="square"></p>
+            </div>
+        </div>
+</div>
+<div class="arow gap bio-mobile">
+        <div id="pic" class="column">
+            <p class="circle"></p>
+        </div>
+        <div id="about" class="column ssmargetop">
+            <div id="title" class="centered smargebottom">
+                <h2>Mais c'est qui Wassim ?</h2>
+            </div>
+            <div id="bio" class="centered ssmargebottom">
+                <p>
+                Un monteur de folie mauvais a smash jécris pour remplir voir le rendu je pense pas ce que j ecris pomme pas egal kiwi
+                <br>Un monteur de folie mauvais a smash jécris pour remplir voir le rendu je pense pas ce que j ecris pomme pas egal kiwi
+                <br>Un monteur de folie mauvais a smash jécris pour remplir voir le rendu je pense pas ce que j ecris pomme pas egal kiwi
+                <br>Un monteur de folie mauvais a smash jécris pour remplir voir le rendu je pense pas ce que j ecris pomme pas egal kiwi
+                <br>Un monteur de folie mauvais a smash jécris pour remplir voir le rendu je pense pas ce que j ecris pomme pas egal kiwi
+                <br>Un monteur de folie mauvais a smash jécris pour remplir voir le rendu je pense pas ce que j ecris pomme pas egal kiwi
+                </p>
+            </div>
+            <div id="embed-confiance" class="ssmargebottom centered">
+                <h4>Ceux qui m'ont fait confiance :</h4>
+            </div>
+            <div id="clients" class="arow">
+                <p class="square"></p>
+                <p class="square"></p>
+                <p class="square"></p>
+                <p class="square"></p>
+            </div>
+        </div>
+</div>
+
+
+
+<style>
+    .circle {
+        background: grey;
+        border-radius: 50%;
+        width: 50vh;
+        height: 50vh;
+        text-align:center;
+    }
+    .square {
+        background: grey;
+        border-radius: 10%;
+        width: 10vh;
+        height: 10vh;
+        margin: 1vh;
+        text-align:center;
+    }
+    .arow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .column {
+        display: flex;
+        flex-direction: column;
+    }
+    .centered {
+        text-align: center;
+    }
+    .gap {
+        gap: 1vh;
+    }
+    .margetop {
+        margin-top: 18vh;
+    }
+    .ssmargetop {
+        margin-top: 4vh;
+    }
+    .margebottom {
+        margin-bottom: 10vh;
+    }
+    .smargebottom {
+        margin-bottom: 5vh;
+    }
+    .ssmargebottom {
+        margin-bottom: 2vh;
+    }
+    .centered {
+    text-align: center;
+    }
+    @media (min-width: 992px) {
+        .bio-mobile {
+            display: none;
+        }
+    }
+    @media (max-width: 991px) {
+        .bio-desktop {
+            display: none;
+        }
+        .bio-mobile {
+            display: block;
+            flex-direction: column;
+        }
+        .circle {
+            margin-left:auto;
+            margin-right:auto;
+            margin-bottom:10px;
+        }
+    }
+</style>
