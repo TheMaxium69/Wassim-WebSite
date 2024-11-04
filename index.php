@@ -9,13 +9,28 @@
 
     <p><?= $env_titre ?></p>
 
+    <?= $cp_bio(); ?>
+
+    <?= $cp_stats(); ?>
+
+    <?= $cp_portfolio(); ?>
+
+    <?= $cp_feedback(); ?>
+
+    <?= $cp_formContact(); ?>
+
 </main>
 
+<?php $cp_footer() ?>
 
 <?php $js_exemple(); ?>
 
 
-
+<style>
+    body {
+        background-color: #FAFAFA  ;
+    }
+</style>
 
 
 
