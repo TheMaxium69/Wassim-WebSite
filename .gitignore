@@ -13,3 +13,5 @@ app/salt.prod.php
 # file/
 
 # Other files and folders
+docker/
+docker-compose.yml
