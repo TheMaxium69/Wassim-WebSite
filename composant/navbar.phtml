@@ -8,8 +8,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item gap different" onclick="window.open('#')">Portfolio</li>
-                <li class="nav-item gap" onclick="window.open('#')">Contact</li>
+                <li class="nav-item gap different"><a href="#portfolio">Portfolio</a></li>
+                <li class="nav-item gap"><a href="#formContact">Contact</a></li>
             </ul>
             <div class="navbar-collapse justify-content-end">
                 <ul class="navbar-nav mr-auto" id="socials">
@@ -49,6 +49,14 @@
     nav #socials {
         display: flex;
         flex-direction: row;
+    }
+    nav a {
+        color: black;
+        text-decoration: none;
+        transition: 0.3s
+    }
+    nav a:hover {
+        color: gold ;
     }
     @media (max-width: 992px) {
         i {
