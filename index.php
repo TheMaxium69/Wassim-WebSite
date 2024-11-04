@@ -11,9 +11,9 @@
 
     <?= $cp_bio(); ?>
 
-    <?= $cp_stats(); ?>
+    <?= $cp_cardstat(); ?>
 
-    <?= $cp_portfolio(); ?>
+    <?= $cp_videocards(); ?>
 
     <?= $cp_feedback(); ?>
 
