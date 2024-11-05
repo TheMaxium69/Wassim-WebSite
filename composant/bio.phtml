@@ -5,23 +5,28 @@
             </div>
             <div id="about" class="column">
                 <div id="titlebio" class="centered margebottom">
-                    <h2>LOREM ISPU GNENGEU</h2>
+                    <div class="arow">
+                        <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="triangle">
+                            <polygon points="10,10 90,50 10,90" fill="gold"/>
+                        </svg>
+                        <h4>&nbsp;LOREM ISPU GNENGEU</h4>
+                    </div>
                     <div id="titlefakeborder"></div>
                 </div>
-                <div id="bio" class="centered smargebottom mb-5">
+                <div id="bio" class="centered smargebottom mb-3">
                     <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac malesuada tortor. Vivamus cursus fermentum ipsum, vitae sagittis libero ultrices egestas. Proin vel lorem tempus, eleifend arcu ut, vestibulum orci. Maecenas id convallis nisi. Quisque maximus dignissim mi sed volutpat. Vestibulum vitae lacus eleifend turpis commodo egestas. Donec fermentum sapien eget elit faucibus, ac tempor est pharetra. Duis sollicitudin faucibus interdum. Maecenas aliquet efficitur felis, vitae porttitor dui. Nam non dui eu arcu convallis sagittis. 
                     </p>
                 </div>
                 <div id="embed-confiance" class="ssmargebottom">
-                    <h4 class="">CEUX QUI MON DEJA FAIT CONFIANCE   </h4>
+                    <p>CEUX QUI MON DEJA FAIT CONFIANCE<p>
                     <div id="subtitlefakeborder"></div>
                 </div>
                 <div id="clients" class="arow mt-4">
                     <img src="https://yt3.googleusercontent.com/Wpxp_X2eLIUvlZWjUs25npl5DHXooRLCXxIzFdobLuzHWlNLgjwHWk8-GDaqBVMr0lANoJB54A=s160-c-k-c0x00ffffff-no-rj" class="square" onclick="window.open('https://www.youtube.com/@LoannLV')">
                     <img src="https://yt3.googleusercontent.com/ojJONX7Ov2QRB5LoFpwAmM7Oo2-dYivyzPvMDxPr6dW0MgQB-8RtGjPZq5AjEo91ZHgkmHLaZA=s160-c-k-c0x00ffffff-no-rj" class="square" onclick="window.open('https://www.youtube.com/@OUT-0')">
                     <img src="https://yt3.googleusercontent.com/qY-8Xdhrs5Qcn11ye0VklpgSUM3MUL4T3dWfEP1MrcspuFWvi_9MQzpFhB3QGnxvWbEIIrzY7J0=s160-c-k-c0x00ffffff-no-rj" class="square" onclick="window.open('https://www.youtube.com/@skensurvet')">
-                    <img src="https://yt3.googleusercontent.com/FhJayyf4SgrVuqpNeVXTVGnZxgGLnHGZnJh_A7uJQkyQ6IfRnFQLJbiProaD5il7fWb-y2LbRw=s160-c-k-c0x00ffffff-no-rj" class="square" onclick="window.open('https://www.youtube.com/@mangatrash')">
+                    <img src="https://yt3.googleusercontent.com/FhJayyf4SgrVuqpNeVXTVGnZxgGLnHGZnJh_A7uJQkyQ6IfRnFQLJbiProaD5il7fWb-y2LbRw=s160-c-k-c0x00ffffff-no-rj" class="square" onclick="window.open('https://www.youtube.com/@mangatrash')" id="lastsquare">
                 </div>
             </div>
     </div>
@@ -60,7 +65,7 @@
         width: 80vh;
         height: 120vh;
         margin-right: 10vh;
-        margin-top: -175px;
+        margin-top: -160px;
         margin-left: -90px;
     }
     .square {
@@ -119,14 +124,16 @@
     #titlefakeborder {
         height: 7px;
         background-color: gold;
-        width: 25%;
-        margin: 0 auto;
+        width: 80%;
+        margin-left: auto;
+        margin-right: 20px;
     }
     #subtitlefakeborder {
-        height: 7px;
+        height: 4px;
         background-color: gold;
-        width: 28%;
+        width: 90%;
         margin-right: auto;
+        margin-top: -10px;
     }
     #mtitlefakeborder {
         height: 7px;
@@ -141,20 +148,32 @@
         margin  : 0 auto;
     }
     #home {
-        margin-top: -180px;
+        margin-top: -200px;
     }
     #bio {
         text-align: start;
-        width: 80%;
+        width: 60%;
         font-size: 22px;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 10vh;
+        margin-right: 25vh;
+        font-size: large;
     }
     #embed-confiance {
         margin-top: 7vh;
+        font-size: smaller;
+        text-align: start;
+        margin-right: auto;
     }
     #titlebio {
-        margin-top: 20vh;
+        margin-top: 12vh;
+        margin-left: 27vh;
+        margin-right: auto ;
+    }
+    #lastsquare {
+        margin-right: 25vh;
+    }
+    #triangle {
+        margin-bottom: 4px;
     }
     @media (min-width: 992px) {
         .bio-mobile {
