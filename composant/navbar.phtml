@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top mt-4">
     <div class="container-fluid">
         <a class="navbar-brand" href="#" id="title">
-            WASSIM   BOURIDAH
+            WASSIM BOURIDAH
             <div id="fakeborder"></div>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,7 +19,7 @@
                 <ul class="navbar-nav mr-auto" id="socials">
                     <li class="nav-item" onclick="window.open('https://www.youtube.com/@wassim.b.h', '_blank')" id="ytb"><i class="ri-youtube-line mx-1"></i></li>
                     <li class="nav-item" onclick="window.open('https://www.instagram.com/wassim.bouridah/', '_blank')" id="insta"><i class="ri-instagram-line mx-1"></i></li>
-                    <li><i class="ri-discord-fill"></i> </li>
+                    <li class="nav-item" id="lastli"><i class="ri-discord-fill"></i></li>
                 </ul>
             </div>
         </div>
@@ -30,19 +30,14 @@
     nav {
         box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.25);
         border-radius: 10px;
-        padding-left: 12px;
-        padding-right: 12px;
         width: 90%;
+        height: 90px;
         margin: 0 auto;
-    }
-    nav i {
-        cursor: pointer;
-        font-size: x-large;
     }
     nav li {
         cursor: pointer;
         transition: 0.3s;
-        font-size: larger;
+        font-size: large;
     }
     nav li:hover {
         color: gold ;
@@ -51,8 +46,8 @@
         height: 60px;
     }
     nav .gap{
-        margin-left:3vh;
-        margin-right: 3vh;
+        margin-left:1.5vh;
+        margin-right:1.5vh;
     }
     .bb-gold {
         border-bottom: gold solid 2px;
@@ -71,13 +66,27 @@
         color: gold ;
     }
     nav #title {
-        margin-left: 1vh;
+        margin-left: 3vh;
+        margin-right: 10vh;
     }
     nav #fakeborder {
         height: 4px;
         background-color: gold;
         width: 80%;
         margin: 0 auto;
+    }
+    #lastli {
+        margin-right: 3vh;
+    }
+    nav i {
+        font-size: xx-large;
+        cursor: pointer;
+    }
+    #insta {
+        margin-right: 2vh;
+    }
+    #ytb {
+        margin-right: 2vh;
     }
     @media (max-width: 992px) {
         i {
