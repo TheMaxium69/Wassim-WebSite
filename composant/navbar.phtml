@@ -1,20 +1,25 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top mt-4">
     <div class="container-fluid">
-        <a class="navbar-brand bb-gold" href="#">
-            Wassim Bouridha
+        <a class="navbar-brand" href="#" id="title">
+            WASSIM   BOURIDAH
+            <div id="fakeborder"></div>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item gap different"><a href="#portfolio">Portfolio</a></li>
+                <li class="nav-item gap"><a href="#home">Accueil</a></li>
+                <li class="nav-item gap"><a href="#stats">Stats</a></li>
+                <li class="nav-item gap"><a href="#portfolio">Vidéo</a></li>
+                <li class="nav-item gap"><a href="#feedback">Feedback</a></li>
                 <li class="nav-item gap"><a href="#formContact">Contact</a></li>
             </ul>
             <div class="navbar-collapse justify-content-end">
                 <ul class="navbar-nav mr-auto" id="socials">
                     <li class="nav-item" onclick="window.open('https://www.youtube.com/@wassim.b.h', '_blank')" id="ytb"><i class="ri-youtube-line mx-1"></i></li>
                     <li class="nav-item" onclick="window.open('https://www.instagram.com/wassim.bouridah/', '_blank')" id="insta"><i class="ri-instagram-line mx-1"></i></li>
+                    <li><i class="ri-discord-fill"></i> </li>
                 </ul>
             </div>
         </div>
@@ -23,7 +28,12 @@
 
 <style>
     nav {
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.25);
+        border-radius: 10px;
+        padding-left: 12px;
+        padding-right: 12px;
+        width: 90%;
+        margin: 0 auto;
     }
     nav i {
         cursor: pointer;
@@ -32,6 +42,7 @@
     nav li {
         cursor: pointer;
         transition: 0.3s;
+        font-size: larger;
     }
     nav li:hover {
         color: gold ;
@@ -40,11 +51,12 @@
         height: 60px;
     }
     nav .gap{
-        margin-left:0.5vh;
-        margin-right: 0.5vh;
+        margin-left:3vh;
+        margin-right: 3vh;
     }
     .bb-gold {
         border-bottom: gold solid 2px;
+        width: fit-content; 
     }
     nav #socials {
         display: flex;
@@ -57,6 +69,15 @@
     }
     nav a:hover {
         color: gold ;
+    }
+    nav #title {
+        margin-left: 1vh;
+    }
+    nav #fakeborder {
+        height: 4px;
+        background-color: gold;
+        width: 80%;
+        margin: 0 auto;
     }
     @media (max-width: 992px) {
         i {
