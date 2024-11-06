@@ -7,8 +7,6 @@
 
 <main>
 
-    <p><?= $env_titre ?></p>
-
     <?= $cp_bio(); ?>
 
     <?= $cp_cardstat(); ?>
