@@ -26,7 +26,7 @@
 
 <style>
     body {
-        background-color: #FAFAFA  ;
+        background-color: rgba(255, 255, 255)  ;
     }
 </style>
 
