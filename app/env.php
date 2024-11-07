@@ -71,4 +71,4 @@ $env_js_global = array(
  *
  ************************/
 
-$env_titre = "HelloWorld";
+$env_titre = "";

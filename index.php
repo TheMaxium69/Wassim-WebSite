@@ -1,33 +1,151 @@
 <?php $page_id = 1; require "@tyrositeframework/start.php"; ?>
 
 
+<div class="hideMe">
+  <header> <?php $cp_navbar(); ?> </header>
+  
+  <main>
+    <div id="masterWrap">
+      <div id="panelWrap">
+        <?= $cp_bio(); ?>
+    
+        <?= $cp_cardstat(); ?>
+    
+        <?= $cp_videocards(); ?>
+    
+        <?= $cp_feedback(); ?>
+    
+        <?= $cp_formContact(); ?>
+      </div>
+    </div>
+    <div class="dots"></div>
+    <div class="toolTips">
+      <div class="toolTip">Slider Control</div>
+      <div class="toolTip">Powered by GSAP</div>
+      <div class="toolTip">Side animation</div>
+      <div class="toolTip">Random dog</div>
+      <div class="toolTip">Sliders are useful</div>
+      <div class="toolTip">Follow on Twitter</div>
+    </div>
 
+  </main>
 
-<header> <?php $cp_navbar(); ?> </header>
+</div>
 
-<main>
-
-    <?= $cp_bio(); ?>
-
-    <?= $cp_cardstat(); ?>
-
-    <?= $cp_videocards(); ?>
-
-    <?= $cp_feedback(); ?>
-
-    <?= $cp_formContact(); ?>
-
-</main>
 
 <?php $cp_footer() ?>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Draggable.min.js"></script>
 
 <?php $js_exemple(); ?>
 
 
 <style>
     body {
-        background-color: rgba(255, 255, 255)  ;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    overflow: hidden;
+  }
+  
+  #masterWrap {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+  }
+  
+  #panelWrap {
+    width: 100%;
+    height: 100%;
+  }
+  
+  section {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    position: relative;
+  }
+  
+  .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    position: relative;
+    background-color: gold;
+    margin: 12px;
+    cursor: pointer;
+  }
+  
+  .dots {
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    right: 16px;
+  }
+  
+  nav {
+    position: absolute;
+    z-index: 100;
+  }
+  
+  .toolTips {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    z-index: 1000;
+  }
+  @media (hover:none) {
+    .toolTips  {
+        visibility: hidden;
     }
+  }
+
+  .toolTip {
+    color: black;
+    opacity: 0;
+    text-align: right;
+    height: 12px;
+    margin: 12px 0;
+    line-height: 12px;
+    left: 10px;
+    top: 10px;
+  }
+  
+  h3,
+  p {
+    padding: 0;
+    margin: 0;
+  }
+  
+  h3 {
+    font-size: 1.5em;
+  }
+  
+  p {
+    max-width: 400px;
+    font-weight: 400;
+    text-align: center;
+  }
+  
+  .hideMe {
+    opacity: 0;
+  }
+
+  @media (max-width: 480px) {
+    section img {
+      max-width: 200px;
+    }
+    p {
+      max-width: 180px;
+    }
+  }
 </style>
 
 
