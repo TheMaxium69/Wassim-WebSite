@@ -45,8 +45,6 @@
     body {
     padding: 0;
     margin: 0;
-    font-family: "Roboto", sans-serif;
-    color: white;
     overflow: hidden;
   }
   
@@ -118,34 +116,10 @@
     top: 10px;
   }
   
-  h3,
-  p {
-    padding: 0;
-    margin: 0;
-  }
-  
-  h3 {
-    font-size: 1.5em;
-  }
-  
-  p {
-    max-width: 400px;
-    font-weight: 400;
-    text-align: center;
-  }
-  
   .hideMe {
     opacity: 0;
   }
 
-  @media (max-width: 480px) {
-    section img {
-      max-width: 200px;
-    }
-    p {
-      max-width: 180px;
-    }
-  }
 </style>
 
 
