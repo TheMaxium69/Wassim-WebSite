@@ -8,6 +8,7 @@ const bgColor = "rgba(255, 255, 255)";
 
 const slides = document.querySelectorAll("section");
   const container = document.querySelector("#panelWrap");
+  const footer = document.querySelector("footer");
   let dots = document.querySelector(".dots");
   let toolTips = document.querySelectorAll(".toolTip");
   let oldSlide = 0;
@@ -61,22 +62,16 @@ const slides = document.querySelectorAll("section");
   TweenLite.to(Draggable, 2, { throwProps: { x: 500, y: -300 } });
   // figure out which of the 4 nav controls called the function
   function slideAnim(e) {
-    oldSlide = activeSlide;
-    // dragging the panels
-    if (this.id === "dragger") {
-      activeSlide = offsets.indexOf(this.endY);
+    let oldSlide = activeSlide;
+
+    // click on a dot
+    if (this.className === "dot") {
+      activeSlide = this.index;
+    // scrollwheel
     } else {
-      if (gsap.isTweening(container)) {
-        return;
-      }
-        // click on a dot
-      if (this.className === "dot") {
-        activeSlide = this.index;
-        // scrollwheel
-      } else {
-        activeSlide = e.deltaY > 0 ? (activeSlide += 1) : (activeSlide -= 1);
-      }
+      activeSlide = e.deltaY > 0 ? (activeSlide += 1) : (activeSlide -= 1);
     }
+
     // make sure we're not past the end or beginning slide
     activeSlide = activeSlide < 0 ? 0 : activeSlide;
     activeSlide =
@@ -85,12 +80,17 @@ const slides = document.querySelectorAll("section");
       return;
     }
     // if we're dragging we don't animate the container
-    if (this.id != "dragger") {
-      gsap.to(container, dur, {
-        y: offsets[activeSlide],
-        ease: "power2.inOut",
-        onUpdate: tweenDot,
-      });
+    gsap.to(container, dur, {
+      y: offsets[activeSlide],
+      ease: "power2.inOut",
+      onUpdate: tweenDot,
+    });
+    
+    // Show or hide the footer when on the last slide
+    if (activeSlide === slides.length - 1) {
+      footer.classList.add('show'); 
+    } else {
+      footer.classList.remove('show');
     }
   }
 

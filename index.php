@@ -29,10 +29,10 @@
 
   </main>
 
+  <?php $cp_footer() ?>
 </div>
 
 
-<?php $cp_footer() ?>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Draggable.min.js"></script>
@@ -89,6 +89,23 @@
   nav {
     position: absolute;
     z-index: 100;
+  }
+  
+  footer {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0s 0.5s;
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    width: 100%; 
+  }
+
+  footer.show {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease-in-out, visibility 0s;
   }
   
   .toolTips {
