@@ -20,12 +20,11 @@
     </div>
     <div class="dots"></div>
     <div class="toolTips">
-      <div class="toolTip">Slider Control</div>
-      <div class="toolTip">Powered by GSAP</div>
-      <div class="toolTip">Side animation</div>
-      <div class="toolTip">Random dog</div>
-      <div class="toolTip">Sliders are useful</div>
-      <div class="toolTip">Follow on Twitter</div>
+      <div class="toolTip">Accueil</div>
+      <div class="toolTip">Stats</div>
+      <div class="toolTip">Portfolio</div>
+      <div class="toolTip">Feedback</div>
+      <div class="toolTip">Contact</div>
     </div>
 
   </main>
