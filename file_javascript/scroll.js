@@ -89,7 +89,7 @@ const slides = document.querySelectorAll("section");
       ease: "power2.inOut",
       onUpdate: tweenDot,
     });
-    console.log( offsets[activeSlide])
+    // console.log( offsets[activeSlide])
     
     // Show or hide the footer when on the last slide
     if (activeSlide === slides.length - 1) {
