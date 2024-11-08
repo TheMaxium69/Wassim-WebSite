@@ -1,6 +1,15 @@
-section{
+#panelWrap section:first-child{
     background-image: url(../file_assets/right-triangle.png);
     background-position: right;
     background-size: 40%;
+    background-repeat: no-repeat;
+}
+
+#panelWrap section{
+    background-image:
+            url(../file_assets/left-triangle.png),
+            url(../file_assets/right-triangle.png);
+    background-position: left, right;
+    background-size: 39%, 34%;
     background-repeat: no-repeat;
 }
