@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top mt-4">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#" id="title">
+        <a class="navbar-brand anchor" data-index="0" id="title">
             WASSIM BOURIDAH
             <div id="fakeborder"></div>
         </a>
@@ -9,11 +9,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item gap"><a href="#home">Accueil</a></li>
-                <li class="nav-item gap"><a href="#stats">Stats</a></li>
-                <li class="nav-item gap"><a href="#portfolio">Portfolio</a></li>
-                <li class="nav-item gap"><a href="#feedback">Feedback</a></li>
-                <li class="nav-item gap"><a href="#formContact">Contact</a></li>
+                <li class="nav-item gap anchor" data-index="0">Accueil</li>
+                <li class="nav-item gap anchor" data-index="1">Stats</li>
+                <li class="nav-item gap anchor" data-index="2">Portfolio</li>
+                <li class="nav-item gap anchor" data-index="3">Feedback</li>
+                <li class="nav-item gap anchor" data-index="4">Contact</li>
             </ul>
             <div class="navbar-collapse justify-content-end">
                 <ul class="navbar-nav mr-auto" id="socials">
@@ -54,18 +54,16 @@
         display: flex;
         flex-direction: row;
     }
-    nav a {
-        color: black;
-        text-decoration: none;
-        transition: 0.3s
-    }
+
     nav a:hover {
         color: gold ;
     }
     nav #title {
         margin-left: 4vh;
-        margin-right: 7vh;height: fit-content;
+        margin-right: 7vh;
+        height: fit-content;
         padding: 12px 0;
+        cursor: pointer;
     }
     nav #fakeborder {
         height: 4px;

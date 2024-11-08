@@ -9,6 +9,7 @@ const bgColor = "rgba(255, 255, 255)";
 const slides = document.querySelectorAll("section");
   const container = document.querySelector("#panelWrap");
   const footer = document.querySelector("footer");
+  const anchors = document.querySelectorAll(".anchor");
   let dots = document.querySelector(".dots");
   let toolTips = document.querySelectorAll(".toolTip");
   let oldSlide = 0;
@@ -18,7 +19,8 @@ const slides = document.querySelectorAll("section");
   let offsets = [];
   let toolTipAnims = [];
   let ih = window.innerHeight;
-  // create nev dots and add tooltip listeners
+
+  // create nev dots and, tooltip listeners and add anchor listeners
   for (let i = 0; i < slides.length; i++) {
     let tl = gsap.timeline({ paused: true, reversed: true });
     gsap.set(slides[i], { backgroundColor: bgColor });
@@ -33,6 +35,9 @@ const slides = document.querySelectorAll("section");
     offsets.push(-slides[i].offsetTop);
     tl.to(toolTips[i], 0.25, { opacity: 1, ease: Linear.easeNone });
     toolTipAnims.push(tl);
+    anchors.forEach((anchor) => { // listeners for nav anchor
+      anchor.addEventListener("click", slideAnim);
+    });
   }
 
   // get elements positioned
@@ -67,6 +72,9 @@ const slides = document.querySelectorAll("section");
     // click on a dot
     if (this.className === "dot") {
       activeSlide = this.index;
+      // click on a anchor
+    } else if ( this.classList && this.classList.contains("anchor")){
+      activeSlide = parseInt(this.getAttribute("data-index"), 10);
     // scrollwheel
     } else {
       activeSlide = e.deltaY > 0 ? (activeSlide += 1) : (activeSlide -= 1);
