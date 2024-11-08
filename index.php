@@ -94,7 +94,8 @@
   footer {
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.5s ease-in-out, visibility 0s 0.5s;
+    transform: translateY(100%);
+    transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.5s ease-in-out;
     position: fixed;
     z-index: 100;
     bottom: 0;
@@ -105,7 +106,7 @@
   footer.show {
     opacity: 1;
     visibility: visible;
-    transition: opacity 0.5s ease-in-out, visibility 0s;
+    transform: translateY(0);
   }
   
   .toolTips {
