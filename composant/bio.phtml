@@ -92,6 +92,18 @@
                     <img src="https://yt3.googleusercontent.com/qY-8Xdhrs5Qcn11ye0VklpgSUM3MUL4T3dWfEP1MrcspuFWvi_9MQzpFhB3QGnxvWbEIIrzY7J0=s160-c-k-c0x00ffffff-no-rj" class="square" onclick="window.open('https://www.youtube.com/@skensurvet')">
                     <img src="https://yt3.googleusercontent.com/FhJayyf4SgrVuqpNeVXTVGnZxgGLnHGZnJh_A7uJQkyQ6IfRnFQLJbiProaD5il7fWb-y2LbRw=s160-c-k-c0x00ffffff-no-rj" class="square" onclick="window.open('https://www.youtube.com/@mangatrash')" id="lastsquare">
                 </div>
+                <div id="clientsdetails" class="arrow">
+                    <svg width="100px" height="100px" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(-45)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7.93189 1.24806C7.84228 1.09446 7.67783 1 7.5 1C7.32217 1 7.15772 1.09446 7.06811 1.24806L0.0681106 13.2481C-0.0220988 13.4027 -0.0227402 13.5938 0.0664289 13.749C0.155598 13.9043 0.320967 14 0.5 14H14.5C14.679 14 14.8444 13.9043 14.9336 13.749C15.0227 13.5938 15.0221 13.4027 14.9319 13.2481L7.93189 1.24806Z" fill="#ffd700"></path> </g></svg>
+                    <svg width="100px" height="100px" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(-45)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7.93189 1.24806C7.84228 1.09446 7.67783 1 7.5 1C7.32217 1 7.15772 1.09446 7.06811 1.24806L0.0681106 13.2481C-0.0220988 13.4027 -0.0227402 13.5938 0.0664289 13.749C0.155598 13.9043 0.320967 14 0.5 14H14.5C14.679 14 14.8444 13.9043 14.9336 13.749C15.0227 13.5938 15.0221 13.4027 14.9319 13.2481L7.93189 1.24806Z" fill="#ffd700"></path> </g></svg>
+                    <svg width="100px" height="100px" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(-45)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7.93189 1.24806C7.84228 1.09446 7.67783 1 7.5 1C7.32217 1 7.15772 1.09446 7.06811 1.24806L0.0681106 13.2481C-0.0220988 13.4027 -0.0227402 13.5938 0.0664289 13.749C0.155598 13.9043 0.320967 14 0.5 14H14.5C14.679 14 14.8444 13.9043 14.9336 13.749C15.0227 13.5938 15.0221 13.4027 14.9319 13.2481L7.93189 1.24806Z" fill="#ffd700"></path> </g></svg>
+                    <svg width="100px" height="100px" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(-45)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7.93189 1.24806C7.84228 1.09446 7.67783 1 7.5 1C7.32217 1 7.15772 1.09446 7.06811 1.24806L0.0681106 13.2481C-0.0220988 13.4027 -0.0227402 13.5938 0.0664289 13.749C0.155598 13.9043 0.320967 14 0.5 14H14.5C14.679 14 14.8444 13.9043 14.9336 13.749C15.0227 13.5938 15.0221 13.4027 14.9319 13.2481L7.93189 1.24806Z" fill="#ffd700"></path> </g></svg>
+                </div>
+                <div id="clientssub" class="arrow">
+                    <p>202K</p>
+                    <p>38K</p>
+                    <p>30K</p>
+                    <p>670K</p>
+                </div>
             </div>
         </div>
         <div class="arow gap bio-mobile">
@@ -144,6 +156,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    .arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center
     }
     .column {
         display: flex;
@@ -245,6 +262,28 @@
     }
     #clients img:hover {
         animation: jiggle 0.5s forwards;
+    }
+    #clientsdetails {
+        z-index: 0;
+        margin-top: -85px;
+        margin-left: auto;
+        margin-right: 479px;
+    }
+    #clientsdetails svg {
+        rotate: 35deg;
+        margin: 1vh;
+    }
+    #clients {
+        z-index: 10;
+    }
+    #clientssub p {
+        margin: 45px;
+    }
+    #clientssub {
+        margin-left: auto;
+        margin-right: 475px;
+        margin-top: -85px;
+        z-index: 5;
     }
     @keyframes jiggle {
         0% {
