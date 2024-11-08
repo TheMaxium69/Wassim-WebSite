@@ -1,7 +1,9 @@
 #panelWrap section:first-child{
-    background-image: url(../file_assets/right-triangle.png);
-    background-position: right;
-    background-size: 40%;
+    background-image:
+            url(../file_assets/left-home.png),
+            url(../file_assets/right-triangle.png);
+    background-position: left, right;
+    background-size: contain, 40%;
     background-repeat: no-repeat;
 }
 

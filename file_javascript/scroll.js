@@ -1,7 +1,3 @@
-console.log("exemple file");
-
-
-
 // ------------------- Start Vertical Slide ------------------------
 
 const bgColor = "rgba(255, 255, 255)"; 
@@ -32,7 +28,7 @@ const slides = document.querySelectorAll("section");
     newDot.addEventListener("mouseenter", dotHover);
     newDot.addEventListener("mouseleave", dotHover);
     dots.appendChild(newDot);
-    offsets.push(-slides[i].offsetTop);
+    // offsets.push(-slides[i].offsetTop);
     tl.to(toolTips[i], 0.25, { opacity: 1, ease: Linear.easeNone });
     toolTipAnims.push(tl);
     anchors.forEach((anchor) => { // listeners for nav anchor
@@ -93,6 +89,7 @@ const slides = document.querySelectorAll("section");
       ease: "power2.inOut",
       onUpdate: tweenDot,
     });
+    console.log( offsets[activeSlide])
     
     // Show or hide the footer when on the last slide
     if (activeSlide === slides.length - 1) {
@@ -131,7 +128,8 @@ const slides = document.querySelectorAll("section");
     gsap.set("#panelWrap", { height: slides.length * ih });
     gsap.set(slides, { height: ih });
     for (let i = 0; i < slides.length; i++) {
-      offsets.push(-slides[i].offsetTop);
+      // offsets.push(-slides[i].offsetTop);
+      offsets.push(-ih*(i));
     }
     gsap.set(container, { y: offsets[activeSlide] });
     // dragMe[0].vars.snap = offsets;

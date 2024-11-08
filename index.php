@@ -33,11 +33,10 @@
 </div>
 
 
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Draggable.min.js"></script>
 
-<?php $js_exemple(); ?>
+<?php $js_scroll(); ?>
 
 
 <style>
