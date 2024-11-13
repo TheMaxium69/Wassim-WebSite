@@ -15,7 +15,11 @@
     background-size: 39%, 34%;
     background-repeat: no-repeat;
 }
-
+@media (max-width: 1500px) {
+    #panelWrap section:first-child{
+        background-image: none;
+    }
+}
 @media (max-width: 992px) {
     #panelWrap section{
         background-image:
