@@ -170,7 +170,7 @@
     #bio {
         text-align: start !important;
         width: 60%;
-        margin-left: 110px;
+        margin-left: auto;
         margin-right: auto;
         font-size: large;
     }
@@ -182,7 +182,7 @@
     }
     #titlebio {
         margin-top: 12vh;
-        margin-left: 320px;
+        margin-left: auto;
         margin-right: auto ;
     }
     #triangle {
@@ -200,7 +200,7 @@
     #clientsdetails {
         z-index: 0;
         margin-top: -85px;
-        margin-left: 190px;
+        margin-left: auto;
         margin-right:auto;
     }
     #clientsdetails svg {
@@ -209,14 +209,14 @@
     }
     #clients {
         z-index: 10;
-        margin-left: 190px;
+        margin-left: auto;
         margin-right:auto;
     }
     #clientssub p {
         margin: 45px;
     }
     #clientssub {
-        margin-left: 190px;
+        margin-left: auto;
         margin-right:auto;
         margin-top: -85px;
         z-index: 5;
@@ -238,12 +238,29 @@
             transform: rotate(0deg) scale(1);
         }
     }
-    @media (min-width: 992px) {
+
+    @media (max-width: 1500px) {
+        .circle{
+            width: 780px;
+        }
+        #bio{
+            width: 80%;
+        }
+    }
+    @media (max-width: 1150px) {
+        #bio{
+            width: 100%;
+            margin-left: -50px;
+        }
+    }
+
+
+    @media (min-width: 1051px) {
         .bio-mobile {
             display: none;
         }
     }
-    @media (max-width: 991px) {
+    @media (max-width: 1050px) {
         .bio-desktop {
             display: none;
         }

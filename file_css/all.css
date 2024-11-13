@@ -17,14 +17,20 @@
 }
 @media (max-width: 1500px) {
     #panelWrap section:first-child{
-        background-image: none;
+        background-image:
+                url(../file_assets/left-home.png),
+                url(../file_assets/right-triangle.png);
+        background-position: -227px, right;
+        background-size: contain, 40%;
+        background-repeat: no-repeat;
     }
 }
-@media (max-width: 992px) {
-    #panelWrap section{
+@media (max-width: 1050px) {
+    #panelWrap section,
+    #panelWrap section:first-child{
         background-image:
-                url(../file_assets/left-triangle.png);
-        background-position: left;
+                url(../file_assets/right-triangle.png);
+        background-position: right;
         background-size: 65%;
         background-repeat: no-repeat;
     }
